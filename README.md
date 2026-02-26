@@ -15,9 +15,34 @@ Este proyecto es un framework de automatización para aplicaciones móviles Andr
 - **TypeScript**: Elegí TypeScript por sobre JavaScript para añadir tipado estático, lo que mejora la legibilidad del código, según mi perspectiva.
 - **Page Object Model**: Elegí POM para estructurar el código, lo que facilita el mantenimiento, legibilidad y reusabilidad del código, tanto así como su escalabilidad. Por eso también implementé las clases de los Locators.
 - **Helpers**: Implementé helpers con el método SafeClick porque en mobile tienden a fallar más las interacciones. Se puede mejorar haciendo un extend desde la clase base y poniendo los métodos allí.
-<!-- - **GitHub Pages**: Implementé GitHub Pages para publicar los reportes de las pruebas en el repo de GitHub, ya que es una herramienta gratuita y fácil de usar. -->
 - **Test Specs**: Use Test Specs para definir los escenarios de prueba, porque es más rápido, al igual que en challenge web, de mi preferencia usaría BDD con Cucumber y las clases test steps.
 - **Reporte**: En este caso uso los reportes de Allure porque hay una librería específica para WDIO que ya está integrada.
+
+
+## 🎬 Escenarios de Prueba
+
+Actualmente el proyecto cuenta con los siguientes escenarios automatizados, diseñados para ser robustos ante cambios en la interfaz:
+
+### 1. Flujo de Onboarding (End-to-End)
+- **Archivo**: `test/specs/onboarding.test.ts`
+- **Objetivo**: Asegurar que un usuario nuevo puede navegar las pantallas de bienvenida y llegar al buscador.
+- **Detalle de Pasos**:
+    1. **Detección de Pop-up**: El sistema espera hasta 20 segundos por un pop-up promocional. Si aparece, lo cierra de forma segura; si no, continúa sin fallar (manejo de elementos opcionales).
+    2. **Carrusel Informativo**: Se valida la presencia de los títulos en cada slide ("BUSCÁ TU PASAJE", "ELEGÍ CÓMO VIAJAR", etc.).
+    3. **Navegación**: Se interactúa con el botón "Continuar" en cada pantalla.
+    4. **Remind Later**: Se gestiona el diálogo de notificaciones mediante el método `waitQuizasMasTarde`, configurado como opcional para evitar bloqueos.
+    5. **Verificación**: Se confirma la carga del buscador principal verificando un elemento único del Home.
+
+### 2. Búsqueda de Pasajes de Ida
+- **Archivo**: `test/specs/tickets.test.ts`
+- **Objetivo**: Validar el funcionamiento del motor de búsqueda desde la selección de origen hasta la pantalla de resultados.
+- **Detalle de Pasos**:
+    1. **Bypass de Onboarding**: Utiliza el helper `skipOnboarding()` para agilizar el inicio del test (reutilización de código).
+    2. **Selección de Origen**: Ingresa al buscador de ciudades, escribe "Buenos Aires" y selecciona la primera coincidencia.
+    3. **Selección de Destino**: Repite el proceso para "Rosario".
+    4. **Calendario Nativo**: Interactúa con el componente de fecha nativo de Android, selecciona el día actual y confirma.
+    5. **Ejecución**: Presiona el botón "BUSCAR PASAJES" usando el helper `safeClick` para garantizar que el elemento sea interactuable.
+    6. **Aserción Final**: Valida que la app navega a la pantalla de selección de servicios mediante la comprobación del título dinámico "SELECCIONÁ TU SERVICIO".
 
 
 ## 📋 Requisitos Previos
