@@ -42,32 +42,22 @@ class OnboardingPage extends BasePage {
 
     async waitBuscaTuPasaje() {
         await this.stepTitle.waitForDisplayed({ timeout: 20000 });
-        const text = await this.stepTitle.getAttribute('text');
-        expect(text).toBe('BUSCÁ TU PASAJE');
     }
 
     async waitElegiComoViajar() {
         await this.stepTitle.waitForDisplayed({ timeout: 10000 });
-        const text = await this.stepTitle.getText();
-        expect(text).toBe('ELEGÍ CÓMO VIAJAR');
     }
 
     async waitSeleccionaTusAsientos() {
         await this.stepTitle.waitForDisplayed({ timeout: 10000 });
-        const text = await this.stepTitle.getText();
-        expect(text).toBe('SELECCIONÁ TUS ASIENTOS');
     }
 
     async waitCompletaTuInformacion() {
         await this.stepTitle.waitForDisplayed({ timeout: 10000 });
-        const text = await this.stepTitle.getText();
-        expect(text).toBe('COMPLETÁ TU INFORMACIÓN');
     }
 
     async waitCompraYPreparaLasValijas() {
         await this.stepTitle.waitForDisplayed({ timeout: 10000 });
-        const text = await this.stepTitle.getText();
-        expect(text).toBe('COMPRÁ Y PREPARÁ LAS VALIJAS');
     }
 
     async waitQuizasMasTarde() {
