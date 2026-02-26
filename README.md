@@ -42,7 +42,7 @@ Actualmente el proyecto cuenta con los siguientes escenarios automatizados, dise
     3. **Selección de Destino**: Repite el proceso para "Rosario".
     4. **Calendario Nativo**: Interactúa con el componente de fecha nativo de Android, selecciona el día actual y confirma.
     5. **Ejecución**: Presiona el botón "BUSCAR PASAJES" usando el helper `safeClick` para garantizar que el elemento sea interactuable.
-    6. **Aserción Final**: Valida que la app navega a la pantalla de selección de servicios mediante la comprobación del título dinámico "SELECCIONÁ TU SERVICIO".
+    6. **Aserción Final**: Valida que la app navega a la pantalla de selección de servicios mediante la comprobación del título "Elegí tu viaje de IDA".
 
 
 ## 📋 Requisitos Previos
