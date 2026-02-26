@@ -32,18 +32,19 @@ jobs:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           EXECUTION: bs
-        run: npm run wdio:bs -- --spec ./test/specs/onboarding.test.ts
-
-      - name: Generate Allure Report
-        if: always()
-        run: npm run report:generate
+        run: npm run wdio:bs
 
       - name: Get Allure History
         if: always()
         continue-on-error: true
         run: |
-          git checkout gh-pages
-          cp -r history allure-results/history || true
+          git fetch origin gh-pages
+          git checkout origin/gh-pages -- history
+          mv history allure-results/ || true
+
+      - name: Generate Allure Report
+        if: always()
+        run: npm run report:generate
 
       - name: Deploy Allure Report to GitHub Pages
         if: always()

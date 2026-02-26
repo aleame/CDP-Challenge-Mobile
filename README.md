@@ -1,6 +1,10 @@
 # 📱 CDP Challenge Mobile Automation
 
 Este proyecto es un framework de automatización para aplicaciones móviles Android utilizando **WebdriverIO** y **TypeScript**.
+Realice la automtatización de la aplicación de Central de Pasajes para Android, porque la sample app de BrowserStack me presento varios inconvenientes.
+Realice dos flujos de pruebas, dos happy paths:
+- Un flujo de onboarding
+- Un flujo de búsqueda de pasajes de ida
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -127,9 +131,6 @@ El proyecto cuenta con un pipeline automatizado que:
 Para que el pipeline funcione, asegúrate de tener configurados los siguientes **Secrets** en GitHub:
 - `BROWSERSTACK_USERNAME`
 - `BROWSERSTACK_ACCESS_KEY`
-
-
-
 
 
 ## 📁 Estructura del Proyecto
