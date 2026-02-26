@@ -89,6 +89,15 @@ Para que el pipeline funcione, asegúrate de tener configurados los siguientes *
 Puedes acceder a los reportes históricos en el siguiente enlace:
 [https://aleame.github.io/CDP-Challenge-Mobile/](https://aleame.github.io/CDP-Challenge-Mobile/)`
 
+
+https://github.com/user-attachments/assets/c3310dc9-871b-4171-be8b-54918a7d044d
+
+
+https://github.com/user-attachments/assets/8e5880eb-c595-4e88-95c0-576bd30c0406
+
+
+
+
 ## 📁 Estructura del Proyecto
 
 ```text
