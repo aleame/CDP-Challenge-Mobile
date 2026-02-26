@@ -97,6 +97,24 @@ npm run report
 ```
 *Este comando limpia los resultados previos, genera el reporte y lo abre en tu navegador.*
 
+### Overview
+
+![Overview](resources/01_Overview.png)
+
+### Suites
+
+![Suites](resources/02_Suites.png)
+
+### 🎥 Visualización de Reportes
+Puedes acceder a los reportes históricos en el siguiente enlace:
+[https://aleame.github.io/CDP-Challenge-Mobile/](https://aleame.github.io/CDP-Challenge-Mobile/)
+
+
+https://github.com/user-attachments/assets/c3310dc9-871b-4171-be8b-54918a7d044d
+
+
+https://github.com/user-attachments/assets/8e5880eb-c595-4e88-95c0-576bd30c0406
+
 ## 🚀 CI/CD con GitHub Actions
 
 El proyecto cuenta con un pipeline automatizado que:
@@ -110,15 +128,6 @@ Para que el pipeline funcione, asegúrate de tener configurados los siguientes *
 - `BROWSERSTACK_USERNAME`
 - `BROWSERSTACK_ACCESS_KEY`
 
-### Visualización de Reportes
-Puedes acceder a los reportes históricos en el siguiente enlace:
-[https://aleame.github.io/CDP-Challenge-Mobile/](https://aleame.github.io/CDP-Challenge-Mobile/)`
-
-
-https://github.com/user-attachments/assets/c3310dc9-871b-4171-be8b-54918a7d044d
-
-
-https://github.com/user-attachments/assets/8e5880eb-c595-4e88-95c0-576bd30c0406
 
 
 

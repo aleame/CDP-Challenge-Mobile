@@ -2,7 +2,7 @@ import OnboardingPage from '../Pages/Onboarding.page.ts';
 import TicketsPage from '../Pages/Tickets.page.ts';
 
 describe('Realizamos el onboarding de la aplicacion', () => {
-    it('should complete onboarding', async () => {
+    it('Se debe completar la navegacion del onboarding', async () => {
         //Realizamos el flujo de onboarding
         await OnboardingPage.waitPopUp();
         await OnboardingPage.clickClosePopUp();

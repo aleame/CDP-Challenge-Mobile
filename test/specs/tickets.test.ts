@@ -2,7 +2,7 @@ import TicketsPage from '../Pages/Tickets.page.ts';
 import OnboardingPage from '../Pages/Onboarding.page.ts';
 
 describe('Busqueda de pasajes solo de IDA', () => {
-    it('should search for a ticket', async () => {
+    it('Se deben buscar pasajes de IDA de Retiro a Rosario Terminal', async () => {
         //Saltamos el flujo de onboarding
         await OnboardingPage.skipOnboarding();
         //Realizamos la búsqueda de pasajes
