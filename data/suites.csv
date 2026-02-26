@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","15567","Se debe completar la navegacion del onboarding","Realizamos el onboarding de la aplicacion","2026-02-26","passed","2026-02-26","","","",""
-"","24337","Se deben buscar pasajes de IDA de Retiro a Rosario Terminal","Busqueda de pasajes solo de IDA","2026-02-26","passed","2026-02-26","","","",""
+"","33912","Se deben buscar pasajes de IDA de Retiro a Rosario Terminal","Busqueda de pasajes solo de IDA","2026-02-26","passed","2026-02-26","","","",""
+"","24052","Se debe completar la navegacion del onboarding","Realizamos el onboarding de la aplicacion","2026-02-26","passed","2026-02-26","","","",""
