@@ -8,11 +8,12 @@ Realice dos flujos de pruebas, dos happy paths:
 
 ## 🚀 Tecnologías Utilizadas
 
-- **WebdriverIO**: Motor de automatización.
-- **TypeScript**: Lenguaje de programación.
-- **Appium**: Para la interacción con dispositivos móviles nativos.
-- **Allure Reporter**: Generación de reportes detallados.
-- **BrowserStack**: Ejecución en la nube.
+- **🤖 WebdriverIO**: Motor de automatización.
+- **🟦 TypeScript**: Lenguaje de programación.
+- **🟣 Appium**: Para la interacción con dispositivos móviles nativos.
+- **📊 Allure Reporter**: Generación de reportes detallados.
+- **📲 BrowserStack**: Ejecución en la nube.
+- **🟢 NodeJs**: Entorno de ejecución.
 
 ## 🎯 Justificación de las decisiones técnicas
 
