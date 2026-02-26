@@ -1,0 +1,17 @@
+export const TicketsLocators = {
+    SeleccionarOrigen: 'id=com.centraldepasajes:id/selectDestinationOriginLabel',
+    OrigenText: '¿Desde dónde salís?',
+    SeleccionarDestino: 'id=com.centraldepasajes:id/selectDestinationDestinationLabel',
+    DestinoText: '¿Hacia dónde viajás?',
+    InputOrigen: 'Retiro',
+    InputDestino: 'Rosario Terminal',
+    BuscarInput: 'id=android:id/search_src_text',
+    BuscarText: 'Buscar',
+    Lugar: 'id=com.centraldepasajes:id/item_place_lbl',
+    Fecha: 'id=com.centraldepasajes:id/searchDeapertureDatePicker',
+    Calendario: 'id=com.centraldepasajes:id/month_grid',
+    OK: 'id=com.centraldepasajes:id/confirm_button',
+    BuscarPasajes: 'id=com.centraldepasajes:id/primaryButtonContainer',
+    selectServiceTitleLabel: 'id=com.centraldepasajes:id/selectServiceTitleLabel',
+    textBuscar: 'id=com.centraldepasajes:id/text',
+};
